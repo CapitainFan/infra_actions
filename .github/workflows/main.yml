@@ -67,7 +67,7 @@ jobs:
  
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
-    needs: tests
+    needs: flake8_tests, programmer_tests_checking
     steps:
       - name: Check out the repo
         # Проверка доступности репозитория Docker Hub для workflow
