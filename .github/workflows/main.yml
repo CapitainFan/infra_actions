@@ -111,8 +111,8 @@ jobs:
     needs: deploy
     steps:
     - name: send message
-      uses: appleboy/telegram-action@master
+      uses: appleboy/telegram-action@v0.1.1
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: ${{ github.workflow }} успешно выполнен! Код отправлен на сервер!
+        message: ${{ github.workflow }} успешно выполнен!
