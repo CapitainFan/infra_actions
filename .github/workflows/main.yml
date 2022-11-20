@@ -102,7 +102,7 @@ jobs:
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull sokolnikovbogdan/infra_actions
-          # Остановка всех контейнеров
+          # Oстановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
           sudo docker run --rm -d -p 5000:5000 sokolnikovbogdan/infra_actions
 
